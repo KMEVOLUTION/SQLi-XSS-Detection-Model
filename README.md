@@ -1,5 +1,9 @@
 # SQL Injection and XSS Detection Model
 
+<p align="center">
+  <img src="images/mainpage.png" width="800">
+</p>
+
 ## Model Overview
 
 This project provides a deep learning model for classifying HTTP request payloads into three categories:
@@ -87,39 +91,9 @@ This ensures a consistent input shape for the model.
 
 The final architecture is based on a **Bidirectional Long Short-Term Memory (Bi-LSTM)** network.
 
-```text
-Input Payload
-      │
-      ▼
-Tokenizer
-      │
-      ▼
-Sequence Encoding
-      │
-      ▼
-Padding (max_len = 40)
-      │
-      ▼
-Embedding Layer
-      │
-      ▼
-SpatialDropout1D
-      │
-      ▼
-Bidirectional LSTM
-      │
-      ▼
-GlobalMaxPooling1D
-      │
-      ▼
-Dropout
-      │
-      ▼
-Dense + Softmax
-      │
-      ▼
-Normal / SQLi / XSS
-```
+<p align="center">
+  <img src="images/png1.png" width="800">
+</p>
 
 ### Embedding Layer
 
@@ -349,25 +323,9 @@ False Positive Rate = 4.53%
 
 During inference, an input payload follows the same preprocessing procedure used during model development.
 
-```text
-Raw Payload
-     ↓
-Text Preprocessing
-     ↓
-Tokenizer
-     ↓
-Sequence Encoding
-     ↓
-Padding to max_len = 40
-     ↓
-Bi-LSTM Model
-     ↓
-Softmax Probabilities
-     ↓
-Selective Prediction
-     ↓
-Predicted Class
-```
+<p align="center">
+  <img src="images/png2.png" width="800">
+</p>
 
 The model produces a probability distribution across the supported classes. The class with the highest probability is selected when it satisfies the configured confidence threshold.
 
