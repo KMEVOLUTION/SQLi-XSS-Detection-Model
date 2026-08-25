@@ -17,6 +17,22 @@ The final model uses a **Bidirectional Long Short-Term Memory (Bi-LSTM)** archit
 Bi-LSTM processes sequences in both forward and backward directions, allowing the model to capture contextual and structural relationships in payloads more effectively than a standard unidirectional LSTM.
 
 ---
+## Recommended Use
+
+This model is intended as a research and experimental tool for detecting
+SQL Injection (SQLi) and Cross-Site Scripting (XSS) patterns in web payloads.
+
+It can be used for:
+
+- Research and educational experiments in web attack detection
+- Payload classification into Normal, SQL Injection, and XSS classes
+- Benchmarking or comparing other machine learning / deep learning approaches
+- Supporting security analysis as an additional detection signal
+- Prototyping AI-assisted web security or intrusion detection workflows
+
+The model should be treated as a supporting classifier rather than a complete
+security solution.
+---
 
 ## Dataset
 
