@@ -1,9 +1,9 @@
 # SQLi-XSS Detection Model License
 
 **Version 1.0**
-**Effective Date:** [DATE]
+**Effective Date:** [26/8/2026]
 
-Copyright © [YEAR] [YOUR NAME / ORGANIZATION]. All rights reserved.
+Copyright © [2026] [KCM / KCMEVOLUTION]. All rights reserved.
 
 This license governs the use, reproduction, modification, redistribution, and commercial exploitation of the SQLi-XSS Detection Model and its associated model artifacts.
 
